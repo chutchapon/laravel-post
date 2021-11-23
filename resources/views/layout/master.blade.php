@@ -30,8 +30,8 @@
                     </li> --}}
                 </ul>
             </div>
-            <form action="/create" class="d-flex">
-                <button class="btn btn-outline-success" type="submit">Login</button>
+            <form action="/login" class="d-flex">
+                <button class="btn btn-outline-primary" type="submit">Login</button>
               </form>
         </nav>
         @yield('content')

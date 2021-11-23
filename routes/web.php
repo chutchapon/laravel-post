@@ -16,3 +16,7 @@ Route::get('/create', [HomeController::class, 'create']);
 // Route::post('/update', [HomeController::class, 'update']);
 
 // Route::get('/delete/{id}', [HomeController::class, 'delete']);
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
