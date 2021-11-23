@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class User_types extends Model
 {
-    public function User()
+    public function Users()
     {
         return $this->hasMany('App\User');
     }
