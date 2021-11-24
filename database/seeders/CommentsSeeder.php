@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class CommentsSeeder extends Seeder
+class CommentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,10 +13,10 @@ class CommentsSeeder extends Seeder
      */
     public function run()
     {
-        $comment = new \App\Models\Comments();
+        $comment = new \App\Models\Comment();
         $comment->user_id = 1;
         $comment->post_id = 1;
-        $comment->detail = "Nice Posts";
+        $comment->detail = "Nice Post";
         $comment->save();
     }
 }

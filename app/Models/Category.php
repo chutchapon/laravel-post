@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Tags extends Model
+class Category extends Model
 {
-    public function Tag_posts()
+    public function Post()
     {
-        return $this->HasMany('App\Models\Tag_posts');
+        return $this->HasMany('App\Models\Post');
     }
 }

@@ -1,4 +1,4 @@
-@extends("layout.master")
+@extends("layouts.master")
 @section('titel', 'My website')
 @section('content')
     <table class="table table-striped">

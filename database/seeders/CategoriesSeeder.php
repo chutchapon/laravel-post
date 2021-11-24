@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class CategoriesSeeder extends Seeder
+class CategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,6 +18,6 @@ class CategoriesSeeder extends Seeder
             ['name' => 'item'],
         ];
 
-        \App\Models\Categories::insert($data);
+        \App\Models\Category::insert($data);
     }
 }

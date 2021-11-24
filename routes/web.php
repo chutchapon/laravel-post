@@ -1,10 +1,11 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', [HomeController::class, 'index']);
+// Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/create', [HomeController::class, 'create']);
 
@@ -19,4 +20,4 @@ Route::get('/create', [HomeController::class, 'create']);
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);

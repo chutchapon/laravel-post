@@ -19,6 +19,6 @@ class UserRoleSeeder extends Seeder
             ['name' => 'guest']
         ];
 
-        \App\Models\User_types::insert($data);
+        \App\Models\User_type::insert($data);
     }
 }

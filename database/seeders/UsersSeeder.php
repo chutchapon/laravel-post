@@ -13,7 +13,7 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        $user = new \App\Models\Users();
+        $user = new \App\Models\User();
         $user->user_type_id = 2;
         $user->name = "Admin";
         $user->email = "admin@gmail.com";

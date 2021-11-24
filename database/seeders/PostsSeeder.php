@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class PostsSeeder extends Seeder
+class PostSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,7 +13,7 @@ class PostsSeeder extends Seeder
      */
     public function run()
     {
-        $post = new \App\Models\Posts();
+        $post = new \App\Models\Post();
         $post->user_id = 1;
         $post->category_id = 1;
         $post->thumbnail = "Test Thumbnails";

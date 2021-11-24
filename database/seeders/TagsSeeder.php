@@ -17,6 +17,6 @@ class TagsSeeder extends Seeder
             ['name' => 'bio'],
             ['name' => 'abilities'],
         ];
-        \App\Models\Tags::insert($data);
+        \App\Models\Tag::insert($data);
     }
 }
