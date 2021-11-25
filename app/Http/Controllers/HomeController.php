@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Banner;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +25,15 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $banners = Banner::all();
+        $banners = [
+            'banners' => $banners,
+        ];
+        $posts = Post::all();
+        $posts = [
+            'posts' => $posts,
+        ];
+
+        return view('home', $banners, $posts);
     }
 }

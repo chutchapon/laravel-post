@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 
 // Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/create', [HomeController::class, 'create']);
+// Route::get('/create', [HomeController::class, 'create']);
 
 
 // Route::post('/store', [HomeController::class, 'store']);
