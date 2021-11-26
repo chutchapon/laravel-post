@@ -29,7 +29,6 @@
 <body>
     @section('banner')
         <div class="container">
-            <div class="row justify-content-center">
                 <div class="mt-2 col-md-12">
                     <div class="col-md-12">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
