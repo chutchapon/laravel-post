@@ -15,7 +15,7 @@ class PostSeeder extends Seeder
     {
         $post = new \App\Models\Post();
         $post->user_id = 1;
-        $post->category_id = 1;
+        $post->category_id = 2;
         $post->thumbnail = "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/heroes/alchemist.png";
         $post->title = "Ancient Apparittion";
         $post->description = "Able to launch a powerful blast of damaging ice across the battlefield, Ancient Apparition threatens to shatter weakened enemies wherever they are.";

@@ -17,8 +17,8 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=promt" rel="stylesheet">
 
-    {{-- <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -36,6 +36,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                Create
+                            </a>
+                            <div class="dropdown-menu dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="{{ url('create') }}">{{ __('Post') }}</a>
+                                {{-- <a class="dropdown-item" href="#">Tags</a> --}}
+                            </div>
+                        </li>
                     </ul>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
@@ -61,7 +71,7 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                document.getElementById('logout-form').submit();">
+                                        document.getElementById('logout-form').submit();">
                                         {{ __('Logout') }}
                                     </a>
 
@@ -81,8 +91,6 @@
             @yield('content')
         </main>
     </div>
-    {{-- app.js --}}
-    <script src="{{ asset('js/app.js') }}"></script>
 </body>
 
 </html>
